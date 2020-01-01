@@ -1,2 +1,2 @@
 # DCCharacterMap
-Plantuml for all DC characters
+Plantuml diagram for all DC characters and their relationships

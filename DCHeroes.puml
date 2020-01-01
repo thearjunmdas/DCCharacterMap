@@ -1,0 +1,54 @@
+@startuml
+
+skinparam component {
+FontColor          black
+AttributeFontColor black
+FontSize           17
+AttributeFontSize  15
+AttributeFontname  Droid Sans Mono
+BackgroundColor    #6A9EFF
+BorderColor        black
+ArrowColor         #222266
+}
+
+skinparam interface {
+BackgroundColor    red
+BorderColor        black
+}
+
+skinparam componentStyle uml2
+
+@startuml
+
+(DC Rebirth) as h
+
+(superman) as sp
+(other-superman) as osp
+(batman) as bat
+(Lana Lang) as lanlan
+(Abra Kadabra) as abka
+(kid flash) as kf
+(Jon) as jo
+(Alfred) as alf
+(Duke Thomas) as duke
+
+h -> sp
+h -down-> kf
+h -down--> osp
+h -down-> bat
+
+sp -> lanlan : Best Friend
+osp -down-> jo : Kid
+jo -> (Kathy Branden) : Friend
+osp -> (Kathy Branden) : neighbour
+kf -> abka : Enemy
+osp -> (oz) : mysterious
+osp -> (Doomsday) : villain
+bat -up-> alf : butler
+bat -> (Lucius) : Business Partner
+bat -down-> (Calendar man) : Enemy
+bat -> duke : Protege
+bat -> (Gotham) : superhero colleague
+bat -down-> (Gotham Girl) : superhero colleague
+(Gotham) <-down-> (Gotham Girl) : siblings
+@enduml
