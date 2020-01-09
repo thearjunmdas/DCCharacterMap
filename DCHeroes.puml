@@ -20,35 +20,74 @@ skinparam componentStyle uml2
 
 @startuml
 
-(DC Rebirth) as h
+(Justice League) as jl
+
+(Thomas Wayne) as tw
+(Martha Kane) as mk
 
 (superman) as sp
 (other-superman) as osp
 (batman) as bat
 (Lana Lang) as lanlan
-(Abra Kadabra) as abka
 (kid flash) as kf
 (Jon) as jo
 (Alfred) as alf
 (Duke Thomas) as duke
 
-h -> sp
-h -down-> kf
-h -down--> osp
-h -down-> bat
+'Tim
+(Red Robin) as RR
+
+'Cassandra Cain
+(Orphan) as orph
+
+'Kate Kane
+'All batman protege are batgirl protege as well except nightwing
+(Batgirl) as bg
+
+'Stephanie Brown
+(Spoiler) as spo
+
+'Basil Carlo
+(Clay Face) as cf
+
+
+(Abra Kadabra) as abka
+(Cluemaster) as clma
+
+jl -> sp
+jl -down-> kf
+jl -down--> osp
+jl -down-> bat
 
 sp -> lanlan : Best Friend
+
 osp -down-> jo : Kid
 jo -> (Kathy Branden) : Friend
 osp -> (Kathy Branden) : neighbour
-kf -> abka : Enemy
 osp -> (oz) : mysterious
 osp -> (Doomsday) : villain
+
+kf -> abka : villain
+
 bat -up-> alf : butler
-bat -> (Lucius) : Business Partner
-bat -down-> (Calendar man) : Enemy
-bat -> duke : Protege
+bat -up-> (Lucius) : Business Partner
+bat -down-> (Calendar man) : villain
+bat -up-> duke : Protege
 bat -> (Gotham) : superhero colleague
 bat -down-> (Gotham Girl) : superhero colleague
+bat -down-> bg : cousin/partners
+bat -up-> (Azrael/John Paul valley) : old enemy(Assasin)
+bat -down-> spo : ally
+bat -left-> clma : villain
+bat -> RR : protege
+bat -down-> orph : protege
+bat -up-> cf : protege
+bat -left-> tw : father
+bat -left-> mk : mother
+
+mk <-> tw : married
+
+spo -> clma : father
+spo <-> RR : Relationship
 (Gotham) <-down-> (Gotham Girl) : siblings
 @enduml
